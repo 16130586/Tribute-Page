@@ -3,6 +3,7 @@ body{
   padding:0;
   box-sizing: border-box;
   background-color: #ccc;
+  font-size : 100%;
 }
 *{
   box-sizing: inherit;
@@ -18,6 +19,7 @@ body{
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   text-align : center;
+  line-height : 1.45;
 }
 .header__title--main{
   font-size: 3em;
@@ -41,14 +43,11 @@ body{
   font-size: 1.5rem;
   letter-spacing: 1rem;
   text-transform : italic;
-  line-height: 0.8;
-  
 }
 .img__caption--sub{
   padding-bottom : 1.75rem;
 }
 .img__caption--main {
-  padding-top : 1rem;
   paddding-bottom : 0.5rem;
 }
 .section__intro{
@@ -79,9 +78,77 @@ body{
 .footer{
   text-align:center;
   font-size: 2rem;
+  padding: 1rem;
 }
 .listing__showcase{
   width: 50%;
   margin : 0px auto;
   text-align: center;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px){
+  html{
+     font-size : 55%;
+  }
+   .header__title--main{
+    padding-top: 1rem;
+  }
+  .header__title--sub{
+    margin-bottom: 2rem;
+  }
+  .img__caption--main,
+  .img__caption--sub{
+    font-size: 2rem;
+  }
+  .img__caption--main{
+     padding-bottom : 1rem;
+  }
+  
+  .info__content{
+    width : 100%;
+    text-align: left;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  html {
+    font-size : 62.5%;
+  }
+  .header__title--main{
+    padding-top: 1rem;
+  }
+  .header__title--sub{
+    margin-bottom: 2rem;
+  }
+  .img__caption--main,
+  .img__caption--sub{
+    font-size: 2rem;
+  }
+  .img__caption--main{
+     padding-bottom : 1rem;
+  }
+  
+  .info__content{
+    width : 100%;
+    text-align: left;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  html {
+    font-size : 100%;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  html {
+    font-size : 120%;
+  }
 }
